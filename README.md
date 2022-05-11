@@ -1,2 +1,2 @@
 # sock-me
-Dedicated to xpromt 
+### Dedicated to xpromt and the rest of you sockers (￣ω￣)
