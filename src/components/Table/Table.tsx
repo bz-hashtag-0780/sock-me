@@ -9,15 +9,19 @@ import {
 	useAsyncDebounce,
 } from 'react-table';
 import styled from 'styled-components';
-
-function GlobalFilter({
+type AnyProps = {
+	preGlobalFilteredRows: any
+	globalFilter: any
+	setGlobalFilter: any
+}
+const GlobalFilter: FC<AnyProps> = ({
 	preGlobalFilteredRows,
 	globalFilter,
 	setGlobalFilter,
-}) {
+}) => {
 	const count = preGlobalFilteredRows.length;
 	const [value, setValue] = useState(globalFilter);
-	const onChange = useAsyncDebounce((value) => {
+	const onChange = useAsyncDebounce((value: any) => {
 		setGlobalFilter(value || undefined);
 	}, 200);
 
@@ -110,12 +114,12 @@ const Table: FC<Props> = ({
 			/>
 			<table {...getTableProps()}>
 				<thead>
-					{headerGroups.map((headerGroup) => (
-						<tr {...headerGroup.getHeaderGroupProps()}>
-							{headerGroup.headers.map((column) => (
+					{headerGroups.map((headerGroup: any, i: any) => (
+						<tr key={i} {...headerGroup.getHeaderGroupProps()}>
+							{headerGroup.headers.map((column: any, i: any) => (
 								// Add the sorting props to control sorting. For this example
 								// we can add them into the header props
-								<th
+								<th key={i}
 									{...column.getHeaderProps(
 										column.getSortByToggleProps()
 									)}
@@ -135,14 +139,14 @@ const Table: FC<Props> = ({
 					))}
 				</thead>
 				<tbody {...getTableBodyProps()}>
-					{page.map((row, i) => {
+					{page.map((row: any, i: any) => {
 						prepareRow(row);
 						return (
-							<tr
+							<tr key={i}
 							>
-								{row.cells.map((cell) => {
+								{row.cells.map((cell: any, i: any) => {
 									return (
-										<td {...cell.getCellProps()}>
+										<td key={i} {...cell.getCellProps()}>
 											{cell.render('Cell')}
 										</td>
 									);

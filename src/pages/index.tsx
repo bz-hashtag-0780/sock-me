@@ -29,8 +29,7 @@ const Home: NextPage = () => {
 useEffect(() => {
   mapBatch()
 }, [])
-
-	const [mappedBatch, setMappedBatch] = useState();
+	const [mappedBatch, setMappedBatch] = useState<any[] | null>(null);
 
   const batchColumns = useMemo(
 		() => [
@@ -40,7 +39,7 @@ useEffect(() => {
 
 					{
 						Header: 'Avatar',
-            Cell: tableProps => (
+            Cell: (tableProps:any) => (
               <Img
                 src={tableProps.row.original.avatar}
                 width={60}
