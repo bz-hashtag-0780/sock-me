@@ -1,0 +1,5 @@
+declare module "@onflow/fcl"
+declare module "@onflow/types"
+declare module "react-table"
+// declare module "@types/node"
+// declare module "@types/node/fs.d.ts"
