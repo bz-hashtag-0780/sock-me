@@ -11,6 +11,7 @@ import { PROFILE } from '../cadence/scripts/script.profile';
 import styled from 'styled-components'
 
 
+
 fcl
   .config()
   .put("accessNode.api", "https://access-mainnet-beta.onflow.org")
@@ -24,6 +25,19 @@ const Home: NextPage = () => {
 
   const Img = styled.img`
     border-radius: 100px;
+  `
+
+  const Button = styled.button`
+
+background: transparent;
+  border-radius: 5px;
+  border: 2px solid #60E1D8;
+  color: #60E1D8;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  cursor: pointer;
   `
 
 useEffect(() => {
@@ -140,7 +154,9 @@ useEffect(() => {
 
         <h1>Flowverse Sock Club</h1> 
         <Video autoPlay loop muted src="https://img.rarible.com/prod/video/upload/t_video_big/prod-itemAnimations/FLOW-A.01ab36aaf654a13e.RaribleNFT:14844/184d156f"/>
-        {/* <button onClick={()=>mapBatch()}>check batch</button> */}
+        <h2>Own a Pair to Become a Member</h2>
+		<Button><a href="https://rarible.com/flowverse/created?filter[filter][sort]=cheapest">Join the club</a></Button>
+		{/* <button onClick={()=>mapBatch()}>check batch</button> */}
         {/* <button onClick={()=>handleClick()}>Copy</button> */}
         {mappedBatch != null ? (
 										<TableStyles>
