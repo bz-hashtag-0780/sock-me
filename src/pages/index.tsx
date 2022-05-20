@@ -109,6 +109,9 @@ useEffect(() => {
         if (response != null) {
         name = response.name
         avatar = response.avatar
+		if(name == "roham") {
+			avatar = "https://flovatar.com/api/image/1412"
+		}
       }
 				// numberOfSocks = response;
 			});
