@@ -167,8 +167,9 @@ useEffect(() => {
 										</TableStyles>
 									) : (
                     <>
-                    <div>Fetching data from the blockchain...</div>
 										<TableStyles>
+
+										<div>Fetching data from the blockchain...</div>
 											<Table
 												columns={batchColumns}
 												data={uniqueSockers}
