@@ -83,6 +83,19 @@ const uniqueSockers = [
     "name": "alxo",
     "avatar": "https://flovatar.com/api/image/4200"
   },
+  
+  {
+    "address": "0xe2e73c2e3a23bb66",
+    "numberOfSocks": "1",
+    "name": "jun888king",
+    "avatar": "https://find.xyz/assets/img/avatars/avatar21.png"
+  },
+  {
+    "address": "0x8e06fac3b35cd086",
+    "numberOfSocks": "1",
+    "name": "LitVault",
+    "avatar": "https://find.xyz/assets/img/avatars/avatar18.png"
+  },
   {
     "address": "0x805abc81051f702a",
     "numberOfSocks": "1",
@@ -118,12 +131,6 @@ const uniqueSockers = [
     "numberOfSocks": "1",
     "name": "raven-kus",
     "avatar": "https://find.mypinata.cloud/ipfs/QmabdHjTVNmK2317ubnoqZjJ5zTaakfWFNBh4L7UeozGsw"
-  },
-  {
-    "address": "0x74cb39528e554ecc",
-    "numberOfSocks": "1",
-    "name": "Takezou",
-    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5x2vawxMgfLotVXrmR78N2041QKtRd4vVsg&usqp=CAU"
   },
   {
     "address": "0xbc2f01cf1748a815",
@@ -420,12 +427,6 @@ const uniqueSockers = [
     "avatar": "https://flovatar.com/api/image/2144"
   },
   {
-    "address": "0x4734e5cb16a99c96",
-    "numberOfSocks": "1",
-    "name": "flowlit",
-    "avatar": ""
-  },
-  {
     "address": "0xa6f1446ca3308eec",
     "numberOfSocks": "1",
     "name": "CheekyCharley",
@@ -581,7 +582,6 @@ const uniqueSockers = [
     "name": "luckytopshot",
     "avatar": "https://find.xyz/assets/img/avatars/avatar17.png"
   }
-  
 ]
 
 export default uniqueSockers
