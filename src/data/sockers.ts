@@ -152,9 +152,9 @@ const uniqueSockers = [
   },
   {
     "address": "0x5a3f9f93973e6ccb",
-    "numberOfSocks": "1",
-    "name": "Anon",
-    "avatar": "https://global-uploads.webflow.com/60f008ba9757da0940af288e/618a0cea8665abc4610c4ca6_basic%20beasts-p-500.png"
+    "numberOfSocks": "1",	
+    "name": "Vinshuu.find",	
+    "avatar": "https://find.xyz/assets/img/avatars/avatar5.png"
   },
   {
     "address": "0xecd238ca88d758d1",
@@ -177,7 +177,7 @@ const uniqueSockers = [
   {
     "address": "0x002c479c5c9eb30f",
     "numberOfSocks": "1",
-    "name": "wenfind",
+    "name": "papavader",
     "avatar": "https://flovatar.com/api/image/5247"
   },
   {
@@ -580,7 +580,7 @@ const uniqueSockers = [
     "address": "0x999ae5f63a0b9de2",
     "numberOfSocks": "1",
     "name": "luckytopshot",
-    "avatar": "https://find.xyz/assets/img/avatars/avatar17.png"
+    "avatar": "https://images.ongaia.com/ipfs/QmaUhmEgy5Znagz2ayY2uyn5Xdbsvzm8PkBM1GghtsXihv/1919.png"
   }
 ]
 
